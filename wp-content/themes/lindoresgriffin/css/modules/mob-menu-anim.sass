@@ -1,0 +1,148 @@
+
+
+.mobile-navigation
+  display: block
+  width: 40px
+  height: 36px
+  position: relative
+  cursor: pointer
+  left: 22px
+  top: 22px
+  @include atMedium
+    display: none
+
+  div 
+    position: absolute
+    height: 2px
+    background: #121212
+    transition: transform .45s cubic-bezier(.9, -.6, .3, 1.6), width .2s ease .2s
+
+  input
+    display: none
+    & + div 
+      top: 50%
+      left: -3px
+      margin: -2px 0 0 0
+      width: 37px
+      transform-origin: 50% 50%
+      & + div 
+        top: 3px
+        left: -3px
+        width: 20px
+        transform-origin: 0 50%
+        & + div 
+          bottom: 5px
+          right: 3px
+          width: 28px
+          transform-origin: 100% 50%
+          transform: translate(-12px, 0)
+                
+    &:checked + div 
+      transform: rotate(-45deg)
+      transition: transform .45s cubic-bezier(.9, -.6, .3, 1.6) .1s
+      & + div 
+        width: 19px
+        transform: translate(6px, 0) rotate(45deg)
+        transition: transform .45s cubic-bezier(.9, -.6, .3, 1.6) .1s, width .2s ease
+        & + div 
+          width: 19px
+          transform: translate(-7px, 1px) rotate(45deg)
+          transition: transform .45s cubic-bezier(.9, -.6, .3, 1.6) .1s, width .2s ease
+
+.mob-logo
+    width: 100%
+    position: relative
+    @include atMedium
+        display: none
+
+
+    &__logo
+      img
+        position: absolute
+        width: 100%
+        width: 250px
+        top: -33px
+        right: 0
+        
+    
+body
+    @include belowMedium   
+        .aside 
+            overflow-y: scroll
+            background: #f3efe0
+
+        .aside,
+        .aside-inner
+            position: relative
+
+        .container 
+            position: relative
+            overflow: hidden
+
+        .pusher
+            position: relative
+            left: 0
+            z-index: 99 
+            height: 100%
+            transition: transform 0.5s
+            
+
+        .pusher::after 
+            position: absolute
+            top: 0
+            right: 0
+            width: 0
+            height: 0
+            background: rgba(0,0,0,0.2)
+            content: ''
+            opacity: 0
+            transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
+        
+        .menu-open .pusher::after 
+            width: 100%
+            height: 100%
+            opacity: 1
+            transition: opacity 0.5s
+
+        .panel
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 100
+            visibility: hidden
+            width: 80%
+            height: 100%
+            transition: all 0.5s
+
+
+        .panel::after
+            position: absolute
+            top: 0
+            right: 0
+            width: 100%
+            height: 100%
+            background: rgba(0,0,0,0.2)
+            content: ''
+            opacity: 1
+            transition: opacity 0.5s
+
+
+        .menu-open .panel::after
+            width: 0
+            height: 0
+            opacity: 0
+            transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s
+        
+
+        .menu-open .pusher 
+            transform: translate3d(80%, 0, 0)
+
+        .panel
+            transform: translate3d(-100%, 0, 0)
+
+        .menu-open .panel 
+            visibility: visible
+            transition: transform 0.5s
+
+        .panel::after
+            display: none

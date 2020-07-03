@@ -1,0 +1,240 @@
+.grid-wrapper
+  height: 100%
+  width: 100%
+  display: grid
+  grid-gap: 5px
+  grid-template-rows: repeat(3, 1fr)
+  grid-template-columns: 12fr
+  grid-template-areas: 'tl' 'tr' 'ml' 'mr' 'bl' 'br'
+  margin-top: 40px
+
+
+  @include atMedium
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-areas: 'tl tl tl tl tl tl tl tl tr tr tr tr' 'ml ml ml ml ml ml mr mr mr mr mr mr' 'bl bl bl bl bl br br br br br br br'
+    margin-top: 0
+
+.grid-item
+  @include atSmall
+    height: auto
+
+  @include atMedium
+    height: 350px
+
+  &__info
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    transition: background 0.1s ease-in
+
+    &--heading
+      font-size: 2.25rem
+      color: #262626
+      margin: 0
+      padding: 0
+
+
+    &--sub-heading
+      font-size: 1.75rem
+      color: #262626
+      margin: 2rem 0 0 0
+
+
+    &--red-bg
+      padding: 30px
+      height: 100%
+      width: 100%
+      justify-content: center !important
+      background: #E6636F
+
+    &--headline
+      font-size: 3.6rem
+      margin: 0
+      font-style: italic
+
+    &--description
+      color: #f7f7f8
+      font-weight: bold
+      font-size: 1.1rem
+
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+      font-size: 1.25rem
+
+      li
+        margin: 10px 0
+
+  &--link
+    width: 100%
+    height: 100%
+    text-decoration: none
+
+  &--top-left
+    grid-area: tl
+    margin-right: -5px
+    overflow: hidden
+    position: relative
+    //background: url('https://res.cloudinary.com/campusxchange/image/upload/v1558978874/Lindores%20and%20Griffin/AdobeStock_236792111_Converted.png')
+    //background-size: cover
+    //background-repeat: no-repeat
+    //background-position: center center
+
+  &--top-middle
+    grid-area: tm
+    background: url('https://res.cloudinary.com/campusxchange/image/upload/v1552490073/Lindores%20and%20Griffin/KAAIMANS0004-compressor.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center 80%
+    background:
+
+  &--top-right
+    grid-area: tr
+    overflow: hidden
+    position: relative
+    background: url('https://res.cloudinary.com/campusxchange/image/upload/v1559039966/Lindores%20and%20Griffin/Pagani-10.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+    @include atSmall
+      background-position-y: 65%
+
+  &--middle-left
+    grid-area: ml
+    background: url('https://res.cloudinary.com/campusxchange/image/upload/v1547478179/Lindores%20and%20Griffin/speciale.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: bottom center
+
+  &--middle-right
+    grid-area: mr
+    background: url('https://res.cloudinary.com/campusxchange/image/upload/v1547668894/Lindores%20and%20Griffin/1L8A3357-compressor_1.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+  &--bottom-left
+    grid-area: bl
+    background: url('https://res.cloudinary.com/campusxchange/image/upload/v1547477979/Lindores%20and%20Griffin/eden.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center 90%
+
+  &--bottom-right
+    grid-area: br
+    background: url('https://res.cloudinary.com/campusxchange/image/upload/v1547671655/Lindores%20and%20Griffin/IMG_0556-_1_-compressor.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+.clients
+  &__header
+    width: 100%
+    text-align: center
+    h3
+      font-size: 1.5rem
+      position: relative
+      margin: 3px 0 0 0
+
+      &:after
+        position: absolute
+        content: ''
+        height: 2px
+        bottom: -4px
+        margin: 0 auto
+        left: 0
+        right: 0
+        width: 5%
+        background: black
+
+
+
+  &__list
+    display: grid
+    height: 100%
+    width: 100%
+    grid-gap: 15px
+    grid-template-rows: 1fr
+    grid-template-columns: repeat(1, 1fr)
+    padding: 0
+    margin: 0
+
+    @include atMedium
+      grid-template-columns: repeat(5, 1fr)
+
+    &--item
+      height: 150px
+      list-style: none
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center center
+
+    &--item-1
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552513763/Lindores%20and%20Griffin/eden-logo.png")
+
+    &--item-2
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552513761/Lindores%20and%20Griffin/auv-logo.png")
+
+    &--item-3
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552513766/Lindores%20and%20Griffin/kaaimans-logo.png")
+
+    &--item-4
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1558695270/Lindores%20and%20Griffin/CREST_NO_SHADOW_copyblack.png")
+
+    &--item-5
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552513758/Lindores%20and%20Griffin/coys-logo.png")
+
+.trust-pilot
+  &__logo
+    height: 150px
+    display: flex
+    align-items: center
+    justify-content: center
+    
+    img
+      width: 270px
+
+  &__testimonials
+    text-align: center
+
+
+    blockquote 
+      font-size: 1.1rem
+      font-weight: 500
+      font-style: italic
+      width: auto !important
+      display: block !important
+      margin-bottom: 0
+      margin-left: 5%
+      margin-right: 5%
+
+      @include atMedium
+        margin-left: 0%
+        margin-right: 0%
+
+    p
+      font-size: 1.3rem
+      margin-bottom: 0
+      margin-left: 5%
+      margin-right: 5%
+
+      @include atMedium
+        margin-left: 0%
+        margin-right: 0%
+
+
+  &__testimonial
+    display: flex !important
+    flex-direction: column
+    align-items: center
+    justify-content: center
+

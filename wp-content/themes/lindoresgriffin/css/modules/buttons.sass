@@ -1,0 +1,49 @@
+.btn
+    display: inline-block
+    color: #f7f7f8
+    font-size: 12px
+    padding: 10px 40px
+    border: none
+    cursor: pointer
+    margin: 14px
+    background-color: #121212
+
+    &--silver
+        text-transform: uppercase
+        background-color: #a0a8af
+        color: #f7f7f8
+
+    &--red
+        color: #f7f7f8
+        text-decoration: none
+
+        &:hover
+            background: #354545
+    &--gold
+        text-transform: uppercase
+        background-color: #b79d50
+
+    &--gold--change
+        background-color: #121212
+
+    &--contact
+        text-transform: uppercase
+        display: none
+        @include atMedium
+            display: block
+
+    &--main-cta
+        margin: 0 auto
+        background: #f7f7f8
+        color: black
+        font-size: 1rem
+        text-decoration: none
+        float: right
+        transition: 0.1s ease-in
+        &:hover
+            background: transparentize(#f7f7f8, 0.1)
+
+    &--mobile
+        display: block
+        @include atMedium
+            display: none

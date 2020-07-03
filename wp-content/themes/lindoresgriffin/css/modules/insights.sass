@@ -1,0 +1,212 @@
+.squeaker
+    margin-right: 2.5%
+
+    @include atLarge
+        flex: 1
+        
+    &__inner
+        text-align: justify
+        h3
+            font-size: 48px
+            margin: 0
+            padding-top: 2.5%
+            
+            @include belowMedium
+                text-align: center
+                text-transform: uppercase
+                margin: 0
+                font-weight: 400
+                letter-spacing: 3px
+
+
+        @include atLarge
+            text-align: left
+            position: fixed
+            width: 270px
+
+#insight-column
+    transition: all .3s
+    
+.insights
+    color: #f7f7f8
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url("https://res.cloudinary.com/campusxchange/image/upload/v1547481895/Lindores%20and%20Griffin/carbon-compressor.jpg")
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover 
+    margin-top: 42px
+
+    @include atMedium
+        margin-top: 0
+        
+    &__header
+        background: #f7f7f8
+        position: fixed
+        width: 100%
+        z-index: 99
+        display: none
+        @include atMedium
+            display: block
+
+    &__header-nav
+        list-style: none
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        margin: 0
+        padding: 0
+        
+        a
+            padding: 10px 40px
+            font-size: 11px
+            color: black
+            text-transform: uppercase
+            text-decoration: none
+
+    &__inner
+        margin: 0 2.5%
+        display: flex
+        flex-direction: column
+        position: relative
+        @include atMedium
+            padding-top: 135px
+        @include atLarge
+            flex-direction: row     
+
+.all-insights
+    flex: 2
+    margin-bottom: 250px
+
+    @include atLarge
+        flex: 2
+    @include atVeryLarge
+        flex: 4
+    
+    &__grid
+        display: grid
+
+        grid-column-gap: 20px
+
+.post
+    background-size: cover
+    background-position: center center
+    height: 300px
+    margin: 90% 0 0 0
+    opacity: 0
+    transition: opacity .3s ease-in
+
+    @include atMedium
+        margin: 25% 0 0 0
+
+    &__content
+        padding: 10px
+        position: relative
+        background: #101518
+        bottom: -90%
+        width: 80%
+        color: #f75f5f
+        border-bottom: 1px solid #f75f5f
+
+    &__upper
+        display: flex
+        
+        &--title
+            font-size: 30px
+            flex: 8
+
+        &--length
+            align-items: center
+            display: flex
+            flex: 2
+            text-transform: uppercase
+            display: none
+            @include atMedium
+                display: block
+
+            p 
+                padding: 0 5px
+
+    &__meta
+        text-transform: uppercase
+
+        a
+            text-decoration: none
+            color: grey
+
+    &--content
+        color: #f5f5f5
+        
+    &--link
+        float: right
+        text-decoration: none
+        background: #333333
+        padding: 10px 35px
+        font-size: 16px
+        color: white
+
+        &:hover
+            background: #354545
+
+.featured-post
+    background-size: cover
+    background-position: center center
+    margin-top: 18.7px
+    height: 450px
+    opacity: 1
+
+    @include atMedium
+        opacity: .2
+        transition: opacity .3s ease-in
+    
+    &__content
+        padding: 10px
+        position: relative
+        background: #101518
+        bottom: -90%
+        width: 80%
+        transition: all .3s ease-out
+        color: #f75f5f
+        border-bottom: 1px solid #f75f5f
+
+        @include atMedium
+            bottom: -170%
+
+    &__upper
+        display: flex
+        
+        &--title
+            font-size: 30px
+            flex: 8
+
+        &--length
+            align-items: center
+            display: flex
+            flex: 2
+            text-transform: uppercase
+            display: none
+            @include atMedium
+                display: block
+
+            p 
+                padding: 0 5px
+
+    &__meta
+        text-transform: uppercase
+
+        a
+            text-decoration: none
+            color: grey
+
+    &--content
+        color: #f5f5f5
+
+    &--link
+        float: right
+        text-decoration: none
+        background: #333333
+        padding: 10px 35px
+        font-size: 16px
+        color: white
+
+        &:hover
+            background: #354545

@@ -1,0 +1,100 @@
+.services-grid
+    display: grid
+    grid-template-columns: 1fr
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+    text-align: center
+    justify-content: center
+    position: relative
+    
+    @include atSmall
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-auto-rows: 1fr 1fr 1fr
+        grid-gap: 50px
+        text-align: center
+        justify-content: center
+        position: relative
+        padding: 2.5%
+
+    &--title:after
+        content: ""
+        background: #121212
+        display: block
+        height: 2px
+        width: 10%
+        bottom: -10px
+        margin-left: auto
+        margin-right: auto
+        position: relative
+
+.services-grid__item
+    transition: all .2s linear
+    line-height: 27px
+    padding-top: 20px
+    opacity: 0
+
+    p
+        text-align: center
+
+    h3 a
+        text-decoration: none
+        color: black
+
+.services-grid--img
+    box-shadow: 1px 1px 12px 0 rgba(0,0,0,0.25)
+    background-size: 100px
+    background-position: center center
+    display: inline-block
+    background-repeat: no-repeat
+    width: 150px
+    height: 150px
+    border: 2px solid #121212
+    border-radius: 100px
+    margin: 0 auto
+    transition: transform 0.1s ease-in
+    
+    &:hover
+        transform: translate(0, -10px)
+
+
+
+.services-grid--sma
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480176/Lindores%20and%20Griffin/sma-compressor.png')
+
+.services-grid--fp
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480214/Lindores%20and%20Griffin/fp-compressor.png')
+
+.services-grid--wdd
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480237/Lindores%20and%20Griffin/wdd-compressor.png')
+    background-size: 110%
+
+.services-grid--seo
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480281/Lindores%20and%20Griffin/seo-compressor.png')
+
+.services-grid--wm
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480314/Lindores%20and%20Griffin/wm-compressor.png')
+
+.services-grid--ss
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480340/Lindores%20and%20Griffin/ss-compressor.png')
+    background-size: 100%
+
+.services-grid--im
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480381/Lindores%20and%20Griffin/im-compressor.png')
+    background-size: 70%
+
+.services-grid--smcm
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480432/Lindores%20and%20Griffin/smcm-compressor.png')
+
+.services-grid--pv
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480469/Lindores%20and%20Griffin/pv-compressor.png')
+    background-size: cover
+
+.services-grid--wh
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1552772118/Lindores%20and%20Griffin/fbpixel-compressor_copy.png')
+    background-size: cover
+
+#basic-waypoint-one
+    margin-top: 50px
+    
+    @include atSmall
+        margin-top: 0

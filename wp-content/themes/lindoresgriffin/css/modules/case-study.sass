@@ -1,0 +1,81 @@
+.case-study
+    width: 60vw
+    position: relative
+    margin: 0 auto
+
+    &__page-banner
+        height: 500px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+
+    &__inner
+        display: flex
+        justify-content: center
+        width: 80%
+        top: -100px
+        position: relative
+        margin: 0 auto
+        background: #fff
+        border-top: 1px solid black
+        border-left: 1px solid black
+        border-right: 1px solid black
+
+    &__container
+        width: 100%
+        padding: 2.5%
+
+        @include atMedium
+            width: 50vw
+
+    &--excerpt p
+        font-size: 1.5rem
+        text-align: center
+        color: black
+
+    &__content
+        p
+            text-align: justify
+            line-height: 26px
+            color: #d3d3d3
+            a
+                text-decoration: underline
+                color: #f7f7f8
+
+            @include atMedium
+                text-align: left
+                color: #121212
+
+        ol li
+            color: #f7f7f8
+
+        @include atMedium
+            color: #121212
+    &__lower 
+        position: relative
+        top: -100px
+        
+    &__grid
+        display: grid
+        grid-template-columns: repeat(3, 1fr)   
+        grid-template-rows: repeat(2, 1fr)   
+        height: 500px
+        top: -100px
+        position: relative
+        background-color: #fdfdfd
+        width: 125%
+        right: 12.5%
+
+        &--item
+            background-position: center center
+            background-size: cover
+            background-repeat: no-repeat
+
+    ul
+        color: #f7f7f8
+        @include atMedium
+            color: #121212
+    a
+        color: #f7f7f8
+        @include atMedium
+            color: #121212

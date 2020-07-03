@@ -1,0 +1,26 @@
+
+@mixin atSmall 
+  @media only screen and (min-width: 540px) 
+      @content
+    
+@mixin atMedium
+    @media only screen and (min-width: 769px)
+        @content
+
+@mixin atLarge
+    @media only screen and (min-width: 960px) 
+        @content
+
+@mixin atVeryLarge
+    @media only screen and (min-width: 1440px) 
+        @content
+
+@mixin belowMedium
+    @media only screen and (max-width: 769px) 
+        @content
+
+@mixin clearfix
+    &::after
+        content: ""
+        clear: both
+        display: table

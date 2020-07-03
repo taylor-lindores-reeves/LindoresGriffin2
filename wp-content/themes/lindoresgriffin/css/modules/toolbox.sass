@@ -1,0 +1,63 @@
+.toolbox
+  height: 750px
+  width: 100%
+  position: relative
+
+  @include atSmall
+    height: 100px
+  
+  &__list-item
+    transition: opacity .5s ease-in
+    opacity: 0
+
+  &__list
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    list-style: none
+    align-items: center
+    width: 100%
+    height: 100%
+
+    @include atSmall
+        flex-direction: row
+        justify-content: space-around
+        list-style: none
+        align-items: center
+
+    li
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 100%
+        margin: 0 10px
+        
+        
+    &--woobox
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480503/Lindores%20and%20Griffin/woobox-compressor.png')
+    &--google
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480526/Lindores%20and%20Griffin/google-compressor.png')    
+    &--whatrunswhere
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480547/Lindores%20and%20Griffin/whatrunswhere-compressor.png')    
+    &--spyfu
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480570/Lindores%20and%20Griffin/spyfu-compressor.png')    
+    &--adbeat
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480591/Lindores%20and%20Griffin/adbeat-compressor.png')
+    &--basecamp
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480612/Lindores%20and%20Griffin/basecamp-compressor.png')
+    &--fbpixel
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480635/Lindores%20and%20Griffin/fbpixel-compressor.png')
+    &--semrush
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480659/Lindores%20and%20Griffin/semrush-compressor.png')
+    &--similarweb
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480674/Lindores%20and%20Griffin/similarweb-compressor.png')
+    &--moat
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480696/Lindores%20and%20Griffin/moat-compressor.png')
+    &--hotjar
+        background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480719/Lindores%20and%20Griffin/hotjar-compressor.png')

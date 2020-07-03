@@ -1,0 +1,33 @@
+.error
+    width: 100vw
+    height: 100vh
+    background: #fff
+    background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480128/Lindores%20and%20Griffin/404-compressor.png')
+    background-repeat: no-repeat
+    background-position: left center
+
+    &__inner
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+    
+
+.error-container
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    width: 680px
+    justify-content: flex-start
+    height: 100%
+    
+    @include atMedium
+        height: 420px
+        justify-content: center
+    
+    &__content
+    &--error
+        font-weight: 900
+    &--subtitle
+        color: #f75f5f

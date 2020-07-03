@@ -1,0 +1,1684 @@
+body,
+html {
+  height: 100%;
+  margin: 0 !important;
+  padding: 0; }
+
+body {
+  font-family: 'Avenir Next', Helvetica, Arial, sans-serif;
+  background: #f7f7f8;
+  font-size: 16px;
+  overflow-x: hidden;
+  color: #121212; }
+
+p {
+  font-size: 14px; }
+
+.container {
+  min-height: 100%; }
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+* {
+  box-sizing: border-box; }
+  *:before, *:after {
+    box-sizing: inherit; }
+
+.sitemap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around; }
+
+.wsp-container {
+  padding-top: 100px;
+  position: relative; }
+
+h1, h2 {
+  font-family: 'Avenir Next', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic; }
+
+h3, h4, h5, h6 {
+  font-family: 'Avenir Next Condensed', sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+
+.wrapper {
+  margin-top: 42px; }
+  @media only screen and (min-width: 769px) {
+    .wrapper {
+      margin-top: 88px; } }
+
+.social-icons {
+  display: flex; }
+
+.social-icon {
+  border-radius: 15px;
+  width: 40px; }
+  @media only screen and (min-width: 769px) {
+    .social-icon {
+      width: 30px; } }
+
+.social-link {
+  border-radius: 30px;
+  height: 60px;
+  display: block; }
+  @media only screen and (min-width: 769px) {
+    .social-link {
+      border-radius: 15px;
+      height: 30px; } }
+
+input:focus {
+  outline: none; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f7f7f8 inset !important; }
+
+.site-header {
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 99;
+  width: 100vw;
+  position: relative; }
+  @media only screen and (min-width: 540px) {
+    .site-header {
+      background: #f7f7f8;
+      width: 100vw; } }
+  @media only screen and (min-width: 540px) {
+    .site-header--full-width {
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      transition: top 0.3s; } }
+  .site-header__menu {
+    width: 100%;
+    padding: 0; }
+    @media only screen and (min-width: 540px) {
+      .site-header__menu {
+        background: #121212; } }
+  .site-header__logo--desktop {
+    margin-left: auto;
+    margin-right: auto;
+    display: none; }
+    @media only screen and (min-width: 540px) {
+      .site-header__logo--desktop {
+        display: block; } }
+    .site-header__logo--desktop img {
+      margin: 0 auto 0 auto;
+      width: 250px; }
+      @media only screen and (min-width: 540px) {
+        .site-header__logo--desktop img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto; } }
+
+.main-navigation {
+  flex-direction: row;
+  display: flex;
+  background: #121212; }
+
+.main-navigation ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  align-items: flex-start;
+  margin: 40px 0 0 0; }
+  @media only screen and (min-width: 769px) {
+    .main-navigation ul {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0; } }
+
+.main-navigation ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #a0a8af; }
+  @media only screen and (min-width: 769px) {
+    .main-navigation ul li {
+      padding: 10px 40px;
+      border: 0;
+      width: auto;
+      text-align: center; } }
+
+.main-navigation ul li a {
+  text-decoration: none;
+  color: #f7f7f8;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 12px;
+  position: relative;
+  width: 100%; }
+  @media only screen and (min-width: 769px) {
+    .main-navigation ul li a {
+      font-weight: 500;
+      padding: 0;
+      width: auto;
+      font-size: 11px; } }
+
+.main-navigation--right {
+  right: 0;
+  transition: 0.1s linear;
+  display: inline-block;
+  position: absolute;
+  background-color: #a0a8af;
+  text-decoration: none;
+  color: #f7f7f8;
+  font-size: 16px;
+  padding: 10px 30px;
+  width: 100%;
+  border-left: 1px solid #ffffff; }
+  .main-navigation--right:hover {
+    background-color: #788087; }
+  @media only screen and (min-width: 769px) {
+    .main-navigation--right {
+      border: 0;
+      padding: 10px 0;
+      font-size: 11px;
+      width: 140px; } }
+
+.main-navigation--left {
+  left: 0;
+  display: inline-block;
+  position: absolute;
+  color: #f7f7f8;
+  width: 50%;
+  padding: 10px 30px;
+  font-weight: 400;
+  padding: 0;
+  width: auto;
+  font-size: 12px; }
+  @media only screen and (min-width: 769px) {
+    .main-navigation--left {
+      border: 0;
+      display: block;
+      padding: 10px 0;
+      width: 140px; } }
+  .main-navigation--left span {
+    display: inline-block;
+    text-decoration: none; }
+
+@media only screen and (min-width: 769px) {
+  .main-navigation--underline:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    bottom: -3px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 0%;
+    background-image: linear-gradient(-69deg, #ffffff 6%, #f8f8f8 100%);
+    /* optional animation */
+    transition: 0.5s ease-out; } }
+
+.main-navigation--underline:hover:after {
+  width: 100%; }
+
+.site-footer {
+  font-size: 11px;
+  width: 100%;
+  height: 200px;
+  z-index: 99;
+  background-color: #121212;
+  position: relative; }
+  .site-footer--text {
+    font-weight: 400;
+    color: #f7f7f8; }
+    @media only screen and (min-width: 540px) {
+      .site-footer--text {
+        color: #121212; } }
+  @media only screen and (min-width: 540px) {
+    .site-footer {
+      background-color: #f7f7f8;
+      height: 40px; } }
+
+.footer-nav-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.footer-nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column; }
+  @media only screen and (min-width: 540px) {
+    .footer-nav-list ul {
+      flex-direction: row; } }
+
+.footer-nav-list ul li {
+  list-style: none;
+  padding: 10px 40px;
+  margin: 0;
+  text-align: center; }
+
+.footer-nav-list ul li a {
+  text-decoration: none;
+  color: #f7f7f8;
+  font-weight: 300; }
+  @media only screen and (min-width: 540px) {
+    .footer-nav-list ul li a {
+      color: #262626; } }
+
+.footer-nav-list ul li:first-child {
+  position: relative; }
+  @media only screen and (min-width: 540px) {
+    .footer-nav-list ul li:first-child {
+      position: absolute;
+      left: 0%; } }
+
+.profiles {
+  display: grid;
+  grid-gap: 20px;
+  margin: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 100px; }
+  @media only screen and (min-width: 769px) {
+    .profiles {
+      flex-direction: row; } }
+  .profiles__column {
+    width: 100%;
+    background: #ffffff; }
+    @media only screen and (min-width: 769px) {
+      .profiles__column {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 5px; } }
+
+.location__inner {
+  display: flex;
+  flex-direction: column; }
+
+.profile {
+  width: 100%;
+  height: 300px;
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.15); }
+  .profile--taylor {
+    background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547482353/Lindores%20and%20Griffin/taylor-compressor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; }
+  .profile--william {
+    background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547482299/Lindores%20and%20Griffin/william-compressor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; }
+  .profile--charlie {
+    background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1555153426/Lindores%20and%20Griffin/Picture1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 30%; }
+
+/* Just for the absolutes within */
+.lskew {
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (min-width: 769px) {
+    .lskew {
+      overflow: visible; } }
+
+/* Set an image as the right side, make it stand out by doing it smaller (5% top and bottom) */
+.lskew .skew-image {
+  position: absolute;
+  width: 52%;
+  right: 0px;
+  top: 15%;
+  bottom: 2%;
+  background-size: cover;
+  background-position: center 70%; }
+  @media only screen and (min-width: 769px) {
+    .lskew .skew-image {
+      width: 50%;
+      right: 0;
+      top: 5%;
+      bottom: 5%; } }
+
+/* Just for the absolute inside */
+.lskew .skew-wrapper {
+  position: relative;
+  width: 50%; }
+
+/* OPTION */
+.lskew .skew-wrapper.min200 {
+  min-height: 200px; }
+
+.lskew .skew-wrapper.min300 {
+  min-height: 300px; }
+
+.lskew .skew-wrapper.min400 {
+  min-height: 400px; }
+
+/* The text background, skewed and adjusted to fit nicely */
+.lskew .skew-content-bg {
+  position: absolute;
+  height: 100%;
+  top: 0%;
+  left: -30px;
+  right: -20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480043/Lindores%20and%20Griffin/wing-black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  -webkit-transform: skew(-6deg, 0deg);
+          transform: skew(-6deg, 0deg); }
+
+/* Text content settings */
+.lskew .skew-content {
+  position: relative;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 30px 20px;
+  margin-top: 50px; }
+
+.skew-content--title {
+  color: #f75f5f; }
+
+.study {
+  transition: opacity .3s ease-in;
+  opacity: 0; }
+
+.grid-wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 12fr;
+  grid-template-areas: 'tl' 'tr' 'ml' 'mr' 'bl' 'br';
+  margin-top: 40px; }
+  @media only screen and (min-width: 769px) {
+    .grid-wrapper {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: 'tl tl tl tl tl tl tl tl tr tr tr tr' 'ml ml ml ml ml ml mr mr mr mr mr mr' 'bl bl bl bl bl br br br br br br br';
+      margin-top: 0; } }
+
+@media only screen and (min-width: 540px) {
+  .grid-item {
+    height: auto; } }
+
+@media only screen and (min-width: 769px) {
+  .grid-item {
+    height: 350px; } }
+
+.grid-item__info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: background 0.1s ease-in; }
+  .grid-item__info--heading {
+    font-size: 2.25rem;
+    color: #262626;
+    margin: 0;
+    padding: 0; }
+  .grid-item__info--sub-heading {
+    font-size: 1.75rem;
+    color: #262626;
+    margin: 2rem 0 0 0; }
+  .grid-item__info--red-bg {
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    justify-content: center !important;
+    background: #E6636F; }
+  .grid-item__info--headline {
+    font-size: 3.6rem;
+    margin: 0;
+    font-style: italic; }
+  .grid-item__info--description {
+    color: #f7f7f8;
+    font-weight: bold;
+    font-size: 1.1rem; }
+
+.grid-item__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .grid-item__list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.25rem; }
+    .grid-item__list ul li {
+      margin: 10px 0; }
+
+.grid-item--link {
+  width: 100%;
+  height: 100%;
+  text-decoration: none; }
+
+.grid-item--top-left {
+  grid-area: tl;
+  margin-right: -5px;
+  overflow: hidden;
+  position: relative; }
+
+.grid-item--top-middle {
+  grid-area: tm;
+  background: url("https://res.cloudinary.com/campusxchange/image/upload/v1552490073/Lindores%20and%20Griffin/KAAIMANS0004-compressor.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 80%; }
+
+.grid-item--top-right {
+  grid-area: tr;
+  overflow: hidden;
+  position: relative;
+  background: url("https://res.cloudinary.com/campusxchange/image/upload/v1559039966/Lindores%20and%20Griffin/Pagani-10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  @media only screen and (min-width: 540px) {
+    .grid-item--top-right {
+      background-position-y: 65%; } }
+
+.grid-item--middle-left {
+  grid-area: ml;
+  background: url("https://res.cloudinary.com/campusxchange/image/upload/v1547478179/Lindores%20and%20Griffin/speciale.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+
+.grid-item--middle-right {
+  grid-area: mr;
+  background: url("https://res.cloudinary.com/campusxchange/image/upload/v1547668894/Lindores%20and%20Griffin/1L8A3357-compressor_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.grid-item--bottom-left {
+  grid-area: bl;
+  background: url("https://res.cloudinary.com/campusxchange/image/upload/v1547477979/Lindores%20and%20Griffin/eden.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 90%; }
+
+.grid-item--bottom-right {
+  grid-area: br;
+  background: url("https://res.cloudinary.com/campusxchange/image/upload/v1547671655/Lindores%20and%20Griffin/IMG_0556-_1_-compressor.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.clients__header {
+  width: 100%;
+  text-align: center; }
+  .clients__header h3 {
+    font-size: 1.5rem;
+    position: relative;
+    margin: 3px 0 0 0; }
+    .clients__header h3:after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      bottom: -4px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 5%;
+      background: black; }
+
+.clients__list {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-gap: 15px;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0;
+  margin: 0; }
+  @media only screen and (min-width: 769px) {
+    .clients__list {
+      grid-template-columns: repeat(5, 1fr); } }
+  .clients__list--item {
+    height: 150px;
+    list-style: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .clients__list--item-1 {
+    background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552513763/Lindores%20and%20Griffin/eden-logo.png"); }
+  .clients__list--item-2 {
+    background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552513761/Lindores%20and%20Griffin/auv-logo.png"); }
+  .clients__list--item-3 {
+    background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552513766/Lindores%20and%20Griffin/kaaimans-logo.png"); }
+  .clients__list--item-4 {
+    background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1558695270/Lindores%20and%20Griffin/CREST_NO_SHADOW_copyblack.png"); }
+  .clients__list--item-5 {
+    background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552513758/Lindores%20and%20Griffin/coys-logo.png"); }
+
+.trust-pilot__logo {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .trust-pilot__logo img {
+    width: 270px; }
+
+.trust-pilot__testimonials {
+  text-align: center; }
+  .trust-pilot__testimonials blockquote {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+    width: auto !important;
+    display: block !important;
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%; }
+    @media only screen and (min-width: 769px) {
+      .trust-pilot__testimonials blockquote {
+        margin-left: 0%;
+        margin-right: 0%; } }
+  .trust-pilot__testimonials p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%; }
+    @media only screen and (min-width: 769px) {
+      .trust-pilot__testimonials p {
+        margin-left: 0%;
+        margin-right: 0%; } }
+
+.trust-pilot__testimonial {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.inner-page-banner {
+  width: 100vw;
+  position: relative;
+  margin-top: 20px; }
+  @media only screen and (min-width: 769px) {
+    .inner-page-banner {
+      margin-top: -12px; } }
+
+.inner-page-banner img {
+  transition: all .5s ease;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.content {
+  position: relative;
+  display: block; }
+  .content__columns {
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (min-width: 769px) {
+      .content__columns {
+        flex-direction: row; } }
+    .content__columns--1 {
+      margin: 14px;
+      flex: 6 1; }
+      .content__columns--1 img {
+        width: 100%; }
+    .content__columns--2 {
+      flex: 2 1; }
+  .content__else {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: all .5s ease-out; }
+    @media only screen and (min-width: 769px) {
+      .content__else {
+        background: #ffffff;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+        margin-bottom: 100px;
+        width: 80vw;
+        border-radius: 5px; } }
+  .content__inner {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: all .5s ease-out; }
+    @media only screen and (min-width: 769px) {
+      .content__inner {
+        background: #ffffff;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+        margin-top: 100px;
+        top: -100px;
+        margin-top: 600px;
+        width: 80vw;
+        border-radius: 5px; } }
+
+.content--title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2.5%;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 3px; }
+
+.content--title:after {
+  content: "";
+  background: #121212;
+  display: block;
+  height: 2px;
+  width: 10%;
+  bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+
+.content__container {
+  padding: 2.5%; }
+  .content__container p {
+    font-size: 16px;
+    text-align: justify; }
+    @media only screen and (min-width: 769px) {
+      .content__container p {
+        text-align: left;
+        font-size: 14px; } }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  position: relative; }
+  @media only screen and (min-width: 540px) {
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: 1fr 1fr 1fr;
+      grid-gap: 50px;
+      text-align: center;
+      justify-content: center;
+      position: relative;
+      padding: 2.5%; } }
+  .services-grid--title:after {
+    content: "";
+    background: #121212;
+    display: block;
+    height: 2px;
+    width: 10%;
+    bottom: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+
+.services-grid__item {
+  transition: all .2s linear;
+  line-height: 27px;
+  padding-top: 20px;
+  opacity: 0; }
+  .services-grid__item p {
+    text-align: center; }
+  .services-grid__item h3 a {
+    text-decoration: none;
+    color: black; }
+
+.services-grid--img {
+  box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.25);
+  background-size: 100px;
+  background-position: center center;
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #121212;
+  border-radius: 100px;
+  margin: 0 auto;
+  transition: -webkit-transform 0.1s ease-in;
+  transition: transform 0.1s ease-in;
+  transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in; }
+  .services-grid--img:hover {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px); }
+
+.services-grid--sma {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480176/Lindores%20and%20Griffin/sma-compressor.png"); }
+
+.services-grid--fp {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480214/Lindores%20and%20Griffin/fp-compressor.png"); }
+
+.services-grid--wdd {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480237/Lindores%20and%20Griffin/wdd-compressor.png");
+  background-size: 110%; }
+
+.services-grid--seo {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480281/Lindores%20and%20Griffin/seo-compressor.png"); }
+
+.services-grid--wm {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480314/Lindores%20and%20Griffin/wm-compressor.png"); }
+
+.services-grid--ss {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480340/Lindores%20and%20Griffin/ss-compressor.png");
+  background-size: 100%; }
+
+.services-grid--im {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480381/Lindores%20and%20Griffin/im-compressor.png");
+  background-size: 70%; }
+
+.services-grid--smcm {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480432/Lindores%20and%20Griffin/smcm-compressor.png"); }
+
+.services-grid--pv {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480469/Lindores%20and%20Griffin/pv-compressor.png");
+  background-size: cover; }
+
+.services-grid--wh {
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1552772118/Lindores%20and%20Griffin/fbpixel-compressor_copy.png");
+  background-size: cover; }
+
+#basic-waypoint-one {
+  margin-top: 50px; }
+  @media only screen and (min-width: 540px) {
+    #basic-waypoint-one {
+      margin-top: 0; } }
+
+.btn {
+  display: inline-block;
+  color: #f7f7f8;
+  font-size: 12px;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  margin: 14px;
+  background-color: #121212; }
+  .btn--silver {
+    text-transform: uppercase;
+    background-color: #a0a8af;
+    color: #f7f7f8; }
+  .btn--red {
+    color: #f7f7f8;
+    text-decoration: none; }
+    .btn--red:hover {
+      background: #354545; }
+  .btn--gold {
+    text-transform: uppercase;
+    background-color: #b79d50; }
+  .btn--gold--change {
+    background-color: #121212; }
+  .btn--contact {
+    text-transform: uppercase;
+    display: none; }
+    @media only screen and (min-width: 769px) {
+      .btn--contact {
+        display: block; } }
+  .btn--main-cta {
+    margin: 0 auto;
+    background: #f7f7f8;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    float: right;
+    transition: 0.1s ease-in; }
+    .btn--main-cta:hover {
+      background: rgba(247, 247, 248, 0.9); }
+  .btn--mobile {
+    display: block; }
+    @media only screen and (min-width: 769px) {
+      .btn--mobile {
+        display: none; } }
+
+.toolbox {
+  height: 750px;
+  width: 100%;
+  position: relative; }
+  @media only screen and (min-width: 540px) {
+    .toolbox {
+      height: 100px; } }
+  .toolbox__list-item {
+    transition: opacity .5s ease-in;
+    opacity: 0; }
+  .toolbox__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    @media only screen and (min-width: 540px) {
+      .toolbox__list {
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center; } }
+    .toolbox__list li {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin: 0 10px; }
+    .toolbox__list--woobox {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480503/Lindores%20and%20Griffin/woobox-compressor.png"); }
+    .toolbox__list--google {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480526/Lindores%20and%20Griffin/google-compressor.png"); }
+    .toolbox__list--whatrunswhere {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480547/Lindores%20and%20Griffin/whatrunswhere-compressor.png"); }
+    .toolbox__list--spyfu {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480570/Lindores%20and%20Griffin/spyfu-compressor.png"); }
+    .toolbox__list--adbeat {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480591/Lindores%20and%20Griffin/adbeat-compressor.png"); }
+    .toolbox__list--basecamp {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480612/Lindores%20and%20Griffin/basecamp-compressor.png"); }
+    .toolbox__list--fbpixel {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480635/Lindores%20and%20Griffin/fbpixel-compressor.png"); }
+    .toolbox__list--semrush {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480659/Lindores%20and%20Griffin/semrush-compressor.png"); }
+    .toolbox__list--similarweb {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480674/Lindores%20and%20Griffin/similarweb-compressor.png"); }
+    .toolbox__list--moat {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480696/Lindores%20and%20Griffin/moat-compressor.png"); }
+    .toolbox__list--hotjar {
+      background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480719/Lindores%20and%20Griffin/hotjar-compressor.png"); }
+
+.squeaker {
+  margin-right: 2.5%; }
+  @media only screen and (min-width: 960px) {
+    .squeaker {
+      flex: 1 1; } }
+  .squeaker__inner {
+    text-align: justify; }
+    .squeaker__inner h3 {
+      font-size: 48px;
+      margin: 0;
+      padding-top: 2.5%; }
+      @media only screen and (max-width: 769px) {
+        .squeaker__inner h3 {
+          text-align: center;
+          text-transform: uppercase;
+          margin: 0;
+          font-weight: 400;
+          letter-spacing: 3px; } }
+    @media only screen and (min-width: 960px) {
+      .squeaker__inner {
+        text-align: left;
+        position: fixed;
+        width: 270px; } }
+
+#insight-column {
+  transition: all .3s; }
+
+.insights {
+  color: #f7f7f8;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), black), url("https://res.cloudinary.com/campusxchange/image/upload/v1547481895/Lindores%20and%20Griffin/carbon-compressor.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 42px; }
+  @media only screen and (min-width: 769px) {
+    .insights {
+      margin-top: 0; } }
+  .insights__header {
+    background: #f7f7f8;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    display: none; }
+    @media only screen and (min-width: 769px) {
+      .insights__header {
+        display: block; } }
+  .insights__header-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0; }
+    .insights__header-nav a {
+      padding: 10px 40px;
+      font-size: 11px;
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none; }
+  .insights__inner {
+    margin: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    @media only screen and (min-width: 769px) {
+      .insights__inner {
+        padding-top: 135px; } }
+    @media only screen and (min-width: 960px) {
+      .insights__inner {
+        flex-direction: row; } }
+
+.all-insights {
+  flex: 2 1;
+  margin-bottom: 250px; }
+  @media only screen and (min-width: 960px) {
+    .all-insights {
+      flex: 2 1; } }
+  @media only screen and (min-width: 1440px) {
+    .all-insights {
+      flex: 4 1; } }
+  .all-insights__grid {
+    display: grid;
+    grid-column-gap: 20px; }
+
+.post {
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  margin: 90% 0 0 0;
+  opacity: 0;
+  transition: opacity .3s ease-in; }
+  @media only screen and (min-width: 769px) {
+    .post {
+      margin: 25% 0 0 0; } }
+  .post__content {
+    padding: 10px;
+    position: relative;
+    background: #101518;
+    bottom: -90%;
+    width: 80%;
+    color: #f75f5f;
+    border-bottom: 1px solid #f75f5f; }
+  .post__upper {
+    display: flex; }
+    .post__upper--title {
+      font-size: 30px;
+      flex: 8 1; }
+    .post__upper--length {
+      align-items: center;
+      display: flex;
+      flex: 2 1;
+      text-transform: uppercase;
+      display: none; }
+      @media only screen and (min-width: 769px) {
+        .post__upper--length {
+          display: block; } }
+      .post__upper--length p {
+        padding: 0 5px; }
+  .post__meta {
+    text-transform: uppercase; }
+    .post__meta a {
+      text-decoration: none;
+      color: grey; }
+  .post--content {
+    color: #f5f5f5; }
+  .post--link {
+    float: right;
+    text-decoration: none;
+    background: #333333;
+    padding: 10px 35px;
+    font-size: 16px;
+    color: white; }
+    .post--link:hover {
+      background: #354545; }
+
+.featured-post {
+  background-size: cover;
+  background-position: center center;
+  margin-top: 18.7px;
+  height: 450px;
+  opacity: 1; }
+  @media only screen and (min-width: 769px) {
+    .featured-post {
+      opacity: .2;
+      transition: opacity .3s ease-in; } }
+  .featured-post__content {
+    padding: 10px;
+    position: relative;
+    background: #101518;
+    bottom: -90%;
+    width: 80%;
+    transition: all .3s ease-out;
+    color: #f75f5f;
+    border-bottom: 1px solid #f75f5f; }
+    @media only screen and (min-width: 769px) {
+      .featured-post__content {
+        bottom: -170%; } }
+  .featured-post__upper {
+    display: flex; }
+    .featured-post__upper--title {
+      font-size: 30px;
+      flex: 8 1; }
+    .featured-post__upper--length {
+      align-items: center;
+      display: flex;
+      flex: 2 1;
+      text-transform: uppercase;
+      display: none; }
+      @media only screen and (min-width: 769px) {
+        .featured-post__upper--length {
+          display: block; } }
+      .featured-post__upper--length p {
+        padding: 0 5px; }
+  .featured-post__meta {
+    text-transform: uppercase; }
+    .featured-post__meta a {
+      text-decoration: none;
+      color: grey; }
+  .featured-post--content {
+    color: #f5f5f5; }
+  .featured-post--link {
+    float: right;
+    text-decoration: none;
+    background: #333333;
+    padding: 10px 35px;
+    font-size: 16px;
+    color: white; }
+    .featured-post--link:hover {
+      background: #354545; }
+
+.single {
+  width: 100vw;
+  position: relative; }
+  @media only screen and (min-width: 769px) {
+    .single {
+      margin-top: 90px; } }
+  .single__page-banner {
+    display: flex;
+    justify-content: center; }
+    .single__page-banner img {
+      margin-top: 20px;
+      width: 100%;
+      height: 100%; }
+      @media only screen and (min-width: 769px) {
+        .single__page-banner img {
+          width: 50%;
+          height: 50%; } }
+  .single__inner {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: #101518; }
+    @media only screen and (min-width: 769px) {
+      .single__inner {
+        background: #f7f7f8; } }
+  .single__container {
+    width: 100vw;
+    padding: 2.5%; }
+    @media only screen and (min-width: 769px) {
+      .single__container {
+        width: 50vw;
+        margin-bottom: 73px; } }
+  .single--title {
+    text-align: center;
+    color: #f75f5f; }
+  .single__content p {
+    text-align: justify;
+    line-height: 26px;
+    color: #d3d3d3; }
+    .single__content p a {
+      text-decoration: underline;
+      color: #f7f7f8; }
+    @media only screen and (min-width: 769px) {
+      .single__content p {
+        text-align: left;
+        color: #121212; } }
+  .single__content ol li {
+    color: #f7f7f8; }
+  @media only screen and (min-width: 769px) {
+    .single__content {
+      color: #121212; } }
+  .single ul {
+    color: #f7f7f8; }
+    @media only screen and (min-width: 769px) {
+      .single ul {
+        color: #121212; } }
+  .single a {
+    color: #f7f7f8; }
+    @media only screen and (min-width: 769px) {
+      .single a {
+        color: #121212; } }
+
+.single-cs ul {
+  color: #f7f7f8; }
+  @media only screen and (min-width: 769px) {
+    .single-cs ul {
+      color: #121212; } }
+
+.single-cs a {
+  color: #f7f7f8; }
+  @media only screen and (min-width: 769px) {
+    .single-cs a {
+      color: #121212; } }
+
+.mobile-navigation {
+  display: block;
+  width: 40px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  left: 22px;
+  top: 22px; }
+  @media only screen and (min-width: 769px) {
+    .mobile-navigation {
+      display: none; } }
+  .mobile-navigation div {
+    position: absolute;
+    height: 2px;
+    background: #121212;
+    transition: width 0.2s ease 0.2s, -webkit-transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6);
+    transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6), width 0.2s ease 0.2s;
+    transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6), width 0.2s ease 0.2s, -webkit-transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6); }
+  .mobile-navigation input {
+    display: none; }
+    .mobile-navigation input + div {
+      top: 50%;
+      left: -3px;
+      margin: -2px 0 0 0;
+      width: 37px;
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%; }
+      .mobile-navigation input + div + div {
+        top: 3px;
+        left: -3px;
+        width: 20px;
+        -webkit-transform-origin: 0 50%;
+                transform-origin: 0 50%; }
+        .mobile-navigation input + div + div + div {
+          bottom: 5px;
+          right: 3px;
+          width: 28px;
+          -webkit-transform-origin: 100% 50%;
+                  transform-origin: 100% 50%;
+          -webkit-transform: translate(-12px, 0);
+                  transform: translate(-12px, 0); }
+    .mobile-navigation input:checked + div {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      transition: -webkit-transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s;
+      transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s;
+      transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s, -webkit-transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s; }
+      .mobile-navigation input:checked + div + div {
+        width: 19px;
+        -webkit-transform: translate(6px, 0) rotate(45deg);
+                transform: translate(6px, 0) rotate(45deg);
+        transition: width 0.2s ease, -webkit-transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s;
+        transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s, width 0.2s ease;
+        transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s, width 0.2s ease, -webkit-transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s; }
+        .mobile-navigation input:checked + div + div + div {
+          width: 19px;
+          -webkit-transform: translate(-7px, 1px) rotate(45deg);
+                  transform: translate(-7px, 1px) rotate(45deg);
+          transition: width 0.2s ease, -webkit-transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s;
+          transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s, width 0.2s ease;
+          transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s, width 0.2s ease, -webkit-transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s; }
+
+.mob-logo {
+  width: 100%;
+  position: relative; }
+  @media only screen and (min-width: 769px) {
+    .mob-logo {
+      display: none; } }
+  .mob-logo__logo img {
+    position: absolute;
+    width: 100%;
+    width: 250px;
+    top: -33px;
+    right: 0; }
+
+@media only screen and (max-width: 769px) {
+  body .aside {
+    overflow-y: scroll;
+    background: #f3efe0; }
+  body .aside,
+  body .aside-inner {
+    position: relative; }
+  body .container {
+    position: relative;
+    overflow: hidden; }
+  body .pusher {
+    position: relative;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+  body .pusher::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.2);
+    content: '';
+    opacity: 0;
+    transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s; }
+  body .menu-open .pusher::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.5s; }
+  body .panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    visibility: hidden;
+    width: 80%;
+    height: 100%;
+    transition: all 0.5s; }
+  body .panel::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    content: '';
+    opacity: 1;
+    transition: opacity 0.5s; }
+  body .menu-open .panel::after {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s; }
+  body .menu-open .pusher {
+    -webkit-transform: translate3d(80%, 0, 0);
+            transform: translate3d(80%, 0, 0); }
+  body .panel {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0); }
+  body .menu-open .panel {
+    visibility: visible;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+  body .panel::after {
+    display: none; } }
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .3s ease-out; }
+  .modal--is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .modal__inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .modal__description {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.65; }
+  .modal__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    cursor: pointer; }
+
+.error {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  background-image: url("https://res.cloudinary.com/campusxchange/image/upload/v1547480128/Lindores%20and%20Griffin/404-compressor.png");
+  background-repeat: no-repeat;
+  background-position: left center; }
+  .error__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.error-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 680px;
+  justify-content: flex-start;
+  height: 100%; }
+  @media only screen and (min-width: 769px) {
+    .error-container {
+      height: 420px;
+      justify-content: center; } }
+  .error-container--error {
+    font-weight: 900; }
+  .error-container--subtitle {
+    color: #f75f5f; }
+
+.slick-list,
+.slick-track,
+.slick-slide div {
+  height: 100%; }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0; }
+
+.slick-dots {
+  bottom: -6px; }
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black; }
+
+.slick-dots li button:before {
+  opacity: .50;
+  color: black;
+  font-size: 10px; }
+
+.carousel-two {
+  overflow: hidden; }
+
+.slick-slide {
+  outline: none; }
+
+.slick-list, .slick-track, .slick-slide div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.slick-track {
+  padding-bottom: 20px; }
+
+.slick-slider {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+.carousel {
+  height: 100%; }
+
+.align-center {
+  text-align: center; }
+
+.row {
+  margin: 0; }
+
+.secondary-form {
+  max-width: 65%; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col {
+  float: left;
+  box-sizing: border-box; }
+
+.contact--tel {
+  text-decoration: none;
+  color: black;
+  font-size: .9rem; }
+
+.col.x-100 {
+  width: 100%; }
+  .col.x-100 label {
+    margin-bottom: 5px; }
+  .col.x-100 input, .col.x-100 label {
+    font-size: 16px; }
+
+.content-wrapper {
+  min-height: 100%;
+  position: relative; }
+
+.get-in-touch {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 1.75em;
+  position: relative;
+  padding: 0;
+  margin: 0; }
+
+.title:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -10px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background-image: linear-gradient(-69deg, #000000 6%, #000000 100%); }
+
+.form-field {
+  position: relative;
+  margin: 20px 0 0 0; }
+  @media only screen and (min-width: 540px) {
+    .form-field {
+      margin: 8px 0; } }
+
+.input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  background: #f7f7f8; }
+
+.contact-form {
+  padding: 0 30px;
+  margin: 0;
+  max-width: 460px;
+  margin: 0 auto; }
+  .contact-form__inner {
+    display: flex;
+    flex-direction: row; }
+
+.form-control {
+  font-family: "Muli", sans-serif;
+  background: transparent; }
+
+.drawer {
+  background: #f7f7f8;
+  z-index: 99;
+  height: 0;
+  transition: width 1s ease-in-out;
+  height: 100%;
+  width: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background: #f7f7f8; }
+  .drawer--open {
+    width: 100%; }
+
+.client {
+  height: 100%;
+  padding: 5% 0 0 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .client--open {
+    transition: opacity .3s ease;
+    opacity: 1; }
+
+#success_message {
+  text-align: center;
+  padding: 15%; }
+
+.case-study {
+  width: 60vw;
+  position: relative;
+  margin: 0 auto; }
+  .case-study__page-banner {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .case-study__inner {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    top: -100px;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black; }
+  .case-study__container {
+    width: 100%;
+    padding: 2.5%; }
+    @media only screen and (min-width: 769px) {
+      .case-study__container {
+        width: 50vw; } }
+  .case-study--excerpt p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: black; }
+  .case-study__content p {
+    text-align: justify;
+    line-height: 26px;
+    color: #d3d3d3; }
+    .case-study__content p a {
+      text-decoration: underline;
+      color: #f7f7f8; }
+    @media only screen and (min-width: 769px) {
+      .case-study__content p {
+        text-align: left;
+        color: #121212; } }
+  .case-study__content ol li {
+    color: #f7f7f8; }
+  @media only screen and (min-width: 769px) {
+    .case-study__content {
+      color: #121212; } }
+  .case-study__lower {
+    position: relative;
+    top: -100px; }
+  .case-study__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 500px;
+    top: -100px;
+    position: relative;
+    background-color: #fdfdfd;
+    width: 125%;
+    right: 12.5%; }
+    .case-study__grid--item {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  .case-study ul {
+    color: #f7f7f8; }
+    @media only screen and (min-width: 769px) {
+      .case-study ul {
+        color: #121212; } }
+  .case-study a {
+    color: #f7f7f8; }
+    @media only screen and (min-width: 769px) {
+      .case-study a {
+        color: #121212; } }
+
+.service__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.service__info {
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
+.service__column {
+  flex: 1 1;
+  padding: 2.5%; }
+
+.service--image-right {
+  width: 100%; }
+
+.service__header {
+  padding: 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.service__img {
+  box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.25);
+  background-size: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #121212;
+  border-radius: 100px;
+  margin: 0 auto; }
+  .service__img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; }
+
+.generic-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5% 0; }
+  .generic-box-wrapper--clients {
+    margin: 0 auto;
+    width: 75%;
+    padding: 1% 2.5% !important; }
+  .generic-box-wrapper--trust-pilot {
+    padding: 2.5% 1% 3.5% 1% !important;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    background: white; }
+    @media only screen and (min-width: 769px) {
+      .generic-box-wrapper--trust-pilot {
+        display: grid;
+        grid-template-columns: 2fr 8fr; } }

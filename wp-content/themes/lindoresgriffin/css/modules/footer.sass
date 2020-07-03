@@ -1,0 +1,59 @@
+
+.site-footer 
+  font-size: 11px
+  width: 100%
+  height: 200px
+  z-index: 99
+  background-color: #121212
+  position: relative
+  
+  &--text
+    font-weight: 400
+    color: #f7f7f8
+    @include atSmall
+      color: #121212
+
+  @include atSmall
+    background-color: #f7f7f8
+    height: 40px
+
+.footer-nav-list 
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.footer-nav-list ul 
+  display: flex
+  justify-content: center
+  list-style: none
+  margin: 0
+  padding: 0
+  flex-direction: column
+  
+  @include atSmall
+    flex-direction: row
+
+.footer-nav-list ul li 
+  list-style: none
+  padding: 10px 40px
+  margin: 0
+  text-align: center
+
+.footer-nav-list ul li a 
+  text-decoration: none
+  color: #f7f7f8
+  font-weight: 300
+
+  @include atSmall
+    color: #262626
+
+.footer-nav-list ul li:first-child 
+  position: relative
+
+  @include atSmall
+    position: absolute
+    left: 0%
+
+
+    

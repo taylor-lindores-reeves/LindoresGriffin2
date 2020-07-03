@@ -1,0 +1,70 @@
+
+/* Just for the absolutes within */
+.lskew
+  position: relative
+  overflow: hidden
+  @include atMedium
+    overflow: visible
+
+/* Set an image as the right side, make it stand out by doing it smaller (5% top and bottom) */
+.lskew .skew-image
+  position: absolute
+  width: 52%
+  right: 0px
+  top: 15%
+  bottom: 2%
+  background-size: cover
+  background-position: center 70%
+
+  @include atMedium
+    width: 50%
+    right: 0
+    top: 5%
+    bottom: 5%
+
+
+/* Just for the absolute inside */
+.lskew .skew-wrapper
+  position: relative
+  width: 50%
+
+/* OPTION */
+.lskew .skew-wrapper.min200
+  min-height: 200px
+.lskew .skew-wrapper.min300
+  min-height: 300px
+.lskew .skew-wrapper.min400
+  min-height: 400px
+
+/* The text background, skewed and adjusted to fit nicely */
+.lskew .skew-content-bg
+  position: absolute
+  height: 100%
+  top: 0%
+  left: -30px
+  right: -20px
+  -moz-box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0
+  box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0
+  background-image: url('https://res.cloudinary.com/campusxchange/image/upload/v1547480043/Lindores%20and%20Griffin/wing-black.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center left
+  transform: skew(-6deg, 0deg)
+
+/* Text content settings */
+.lskew .skew-content
+  position: relative
+  font-size: 1.4rem
+  color: #fff
+  padding: 30px 20px
+  margin-top: 50px
+
+.skew-content
+  &--title
+    color: #f75f5f
+  &--desc
+
+.study
+  transition: opacity .3s ease-in
+  opacity: 0

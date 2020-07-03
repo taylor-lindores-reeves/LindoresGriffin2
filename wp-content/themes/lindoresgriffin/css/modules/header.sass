@@ -1,0 +1,166 @@
+
+.site-header 
+  text-transform: uppercase
+  text-align: center
+  z-index: 99
+  width: 100vw
+  position: relative
+
+  @include atSmall
+    background: #f7f7f8
+    width: 100vw
+
+  &--full-width
+    @include atSmall
+      width: 100vw
+      position: fixed
+      top: 0
+      width: 100%
+      transition: top 0.3s
+      
+  &__menu 
+    width: 100%
+    padding: 0
+    
+    @include atSmall
+      background: #121212
+
+  &__logo--desktop
+    margin-left: auto
+    margin-right: auto
+    display: none
+
+    @include atSmall
+      display: block
+      
+    img
+      margin: 0 auto 0 auto
+      width: 250px
+      
+      @include atSmall
+        display: block
+        margin-left: auto
+        margin-right: auto
+
+.main-navigation
+  flex-direction: row
+  display: flex
+  background: #121212
+    
+
+.main-navigation ul 
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-direction: column
+  list-style: none
+  margin: 0
+  padding: 0
+  width: 100%
+  align-items: flex-start
+  margin: 40px 0 0 0
+    
+  @include atMedium
+    flex-direction: row
+    justify-content: center
+    align-items: center  
+    margin: 0
+
+.main-navigation ul li 
+  list-style: none
+  padding: 0
+  margin: 0
+  vertical-align: middle
+  display: flex
+  align-items: center    
+  width: 100%
+  text-align: left
+  border-bottom: 1px solid #a0a8af
+
+  @include atMedium
+    padding: 10px 40px
+    border: 0
+    width: auto
+    text-align: center
+
+
+.main-navigation ul li a 
+  text-decoration: none
+  color: #f7f7f8
+  font-weight: 500
+  font-size: 16px
+  padding: 10px 12px
+  position: relative
+  width: 100%
+
+  @include atMedium
+    font-weight: 500
+    padding: 0
+    width: auto
+    font-size: 11px
+
+.main-navigation--right
+  right: 0
+  transition: 0.1s linear
+  display: inline-block
+  position: absolute
+  background-color: #a0a8af
+  text-decoration: none
+  color: #f7f7f8
+  font-size: 16px
+  padding: 10px 30px
+  width: 100%
+  border-left: 1px solid #ffffff
+
+  &:hover 
+    background-color: #788087
+
+  @include atMedium
+    border: 0
+    padding: 10px 0
+    font-size: 11px
+    width: 140px
+
+.main-navigation--left
+  left: 0
+  display: inline-block
+  position: absolute
+  color: #f7f7f8
+  width: 50%
+  padding: 10px 30px
+  font-weight: 400
+  padding: 0
+  width: auto
+  font-size: 12px
+
+  @include atMedium
+    border: 0
+    display: block
+    padding: 10px 0
+    width: 140px
+  span
+    display: inline-block
+    text-decoration: none
+    
+.main-navigation--underline:after 
+  @include atMedium
+    position: absolute
+    content: ""
+    height: 1px
+    bottom: -3px
+    margin: 0 auto
+    left: 0
+    right: 0
+    width: 0%
+    background-image: linear-gradient(-69deg, #ffffff 6%, #f8f8f8 100%)
+    /* optional animation */
+    -o-transition: 0.5s ease-out
+    -ms-transition: 0.5s ease-out
+    -moz-transition: 0.5s ease-out
+    -webkit-transition: 0.5s ease-out
+    transition: 0.5s ease-out
+
+
+.main-navigation--underline:hover:after
+  width: 100%
+

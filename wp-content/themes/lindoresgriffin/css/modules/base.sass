@@ -1,0 +1,101 @@
+
+// Theme Name: 
+// Theme URI: 
+// Author: 
+// Author URI: 
+// Description:
+// Version: 1.5
+// License: GNU General Public License v2 or later
+// License URI: 
+// Tags:
+// Text Domain: 
+// This theme, like WordPress, is licensed under the GPL.
+// Use it to make something cool, have fun, and share what you've learned with others.
+
+body,
+html 
+  height: 100%
+  margin: 0 !important
+  padding: 0
+
+body
+  font-family: 'Avenir Next', Helvetica, Arial, sans-serif
+  background: #f7f7f8
+  font-size: 16px
+  overflow-x: hidden
+  color: #121212
+
+p
+  font-size: 14px
+
+.container
+  min-height: 100%
+
+.contact
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+*
+  box-sizing: border-box
+  &:before,
+  &:after 
+      box-sizing: inherit
+
+.sitemap
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: space-around
+
+.wsp-container
+  padding-top: 100px
+  position: relative
+
+h1, h2
+  font-family: 'Avenir Next', sans-serif
+  text-transform: uppercase
+  font-weight: 600
+  font-style: italic
+
+h3,h4,h5,h6
+  font-family: 'Avenir Next Condensed', sans-serif
+  font-weight: 600
+  font-style: normal
+  
+.wrapper
+  margin-top: 42px
+
+  @include atMedium
+    margin-top: 88px
+
+.social-icons
+  display: flex
+
+.social-icon
+  border-radius: 15px
+  width: 40px
+
+  @include atMedium
+    width: 30px
+
+.social-link
+  border-radius: 30px
+  height: 60px
+  display: block
+
+  @include atMedium
+    border-radius: 15px
+    height: 30px
+
+input:focus
+    outline: none
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  
+    -webkit-box-shadow: 0 0 0 30px #f7f7f8 inset !important
